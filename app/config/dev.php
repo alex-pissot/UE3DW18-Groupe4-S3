@@ -4,11 +4,11 @@
 $app['db.options'] = array(
     'driver'   => 'pdo_mysql',
     'charset'  => 'utf8',
-    'host'     => 'localhost',  
+    'host'     => 'database',  
     'port'     => '3306',
-    'dbname'   => 'watson',
-    'user'     => 'watson',
-    'password' => 'watson'
+    'dbname'   => 'lamp',
+    'user'     => 'lamp',
+    'password' => 'lamp'
 );
 
 // enable the debug mode
