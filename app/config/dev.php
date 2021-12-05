@@ -6,9 +6,9 @@ $app['db.options'] = array(
     'charset'  => 'utf8',
     'host'     => 'database',  
     'port'     => '3306',
-    'dbname'   => 'lamp',
-    'user'     => 'lamp',
-    'password' => 'lamp'
+    'dbname'   => 'watson',
+    'user'     => 'root',
+    'password' => ''
 );
 
 // enable the debug mode

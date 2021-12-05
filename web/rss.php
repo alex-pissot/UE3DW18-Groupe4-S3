@@ -1,5 +1,5 @@
 <?php
-$db = new PDO('mysql:host=database;dbname=lamp;charset=utf8','lamp','lamp');
+$db = new PDO('mysql:host=database;dbname=watson;charset=utf8','root','');
 // Récupération des données dans la base de données (MySQL)
 $liste = $db->query("SELECT * FROM tl_liens ORDER BY lien_id desc LIMIT 0,15");
 ?>
@@ -15,8 +15,8 @@ $liste = $db->query("SELECT * FROM tl_liens ORDER BY lien_id desc LIMIT 0,15");
         while( $a = $liste->fetch()) { ?>
             <item>
                 <fieldset>
-                    <p>Titre de l'article : </p>
-                    <h2><?= $a['lien_titre'] ?></h2>
+                    <h3>Titre de l'article : </h3>
+                    <a><?= $a['lien_titre'] ?></a>
                     <p>Lien :</p>
                     <link><?= $a['lien_url'] ?></link>
                     <br>
