@@ -1,7 +1,7 @@
 name: ue3dw18
 recipe: lamp
 config:
-  webroot: .
+  webroot: . 
 services:
   phpmyadmin:
     type: phpmyadmin
